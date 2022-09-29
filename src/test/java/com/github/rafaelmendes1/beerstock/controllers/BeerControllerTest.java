@@ -30,12 +30,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(MockitoExtension.class)
 public class BeerControllerTest {
 
-    private static final String BEER_API_URL_PATH = "/beers";
-    private static final long VALID_BEER_ID = 1L;
-    private static final long INVALID_BEER_ID = 2l;
-    private static final String BEER_API_SUBPATH_INCREMENT_URL = "/increment";
-    private static final String BEER_API_SUBPATH_DECREMENT_URL = "/decrement";
-
     private MockMvc mockMvc;
 
     @Mock
