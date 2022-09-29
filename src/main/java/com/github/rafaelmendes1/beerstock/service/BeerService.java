@@ -53,6 +53,8 @@ public class BeerService {
             throw new BeerAlreadyRegisteredException(name);
         }
     }
+    
+    // Regras de negócios
 
     private Beer verifyIfExists(Long id) throws BeerNotFoundException {
         return beerRepository.findById(id)
